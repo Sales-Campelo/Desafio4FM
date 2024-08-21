@@ -1,0 +1,137 @@
+@font-face {
+    font-family:padrao ;
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    padding:0;
+    background-color: hsl(30, 54%, 90%);
+    font-family: padrao;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.img-pai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.img-receita {
+width:100%;
+border-radius: 15px;
+}
+.cardpai { 
+    background-color: hsl(0, 0%, 100%);
+    margin: 20px;
+    margin-top: 100px;
+    padding: 60px;
+    border-radius: 20px;
+    width: 755px;
+}
+.Preparation {
+    background-color: hsl(330, 100%, 98%);
+    padding: 10px;
+    border-radius: 10px;
+}
+.Preparation h3 {
+    color: hsl(332, 51%, 32%);
+}
+span {
+    font-weight: bolder;
+}
+h2 {
+    color:hsl(14, 45%, 36%) ;
+}
+h1 {
+    font-size: 46px;
+}
+ul{
+list-style-type: none;
+}
+ .Preparation ul li::before {
+    content: "•"; 
+    color:hsl(332, 51%, 32%) ; 
+    font-size: 1.2em;
+    margin-right: 20px; }
+
+.ingredients li::before {
+    content: "•"; /* Substitui a bolinha */
+    color:hsl(14, 45%, 36%) ; /* Define a cor da bolinha */
+    font-size: 1.2em; /* Ajusta o tamanho, se necessário */
+    margin-right: 20px; /* Espaço entre a bolinha e o texto */
+}ol {
+    list-style-type: none; /* Remove os números padrão */
+    counter-reset: item; /* Reseta o contador */
+}
+
+ol li {
+    counter-increment: item; /* Incrementa o contador para cada <li> */
+    margin-bottom: 5px;
+}
+
+ol li::before {
+    content: counter(item) ". "; /* Adiciona o número com um ponto */
+    color:hsl(14, 45%, 36%) ; /* Define a cor dos números */
+    font-weight: bold; /* Estiliza o número, se desejado */
+    margin-right: 20px;
+}
+table tr td span {
+    color:hsl(14, 45%, 36%) ;
+}
+table {
+    width: 100%;
+}
+td {
+    border-bottom: 2px solid #c1c1c1;
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+    text-align: center;
+    margin: auto auto;
+}
+@media (max-width: 425px) {
+    .cardpai { 
+        background-color: hsl(0, 0%, 100%);
+        margin: 20px;
+        margin-top: 100px;
+        padding: 20px;
+        border-radius: 20px;
+        width: 755px;
+    }
+
+    .img-pai {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    .img-receita {
+    width:100%;
+    border-radius: 15px;
+    }
+    .Preparation ul li {
+        font-size: 12px;
+        text-align: left;
+    }
+    ul {
+        padding: 0;
+    }
+    ol {
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+
+
